@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <title>Registro de Aula | FluoritaTrack</title>
+    <link rel="stylesheet" href="css/registro-aula.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="images/fluorita.png" alt="Logo" class="sidebar-logo">
+                <h2>Sistema</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html" class="active"><i class="ri-layout-masonry-line"></i> Dashboard</a></li>
+                    <li><a href="dados-gerais.html"><i class="ri-graduation-cap-line"></i>Alunos</a></li>
+                    <li><a href="registro-aula.html"><i class="ri-survey-line"></i> Registrar Aula</a></li>
+                    <li><a href="aulas.html"><i class="ri-book-shelf-line"></i> Gerenciar Aulas</a></li>
+                    <li><a href="configuração.html"><i class="ri-settings-5-line"></i> Configurações</a></li>
+                    <li><a href="index.html"><i class="ri-door-open-line"></i> Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <header class="content-header">
+                <h1>Registrar Frequência da Aula</h1>
+                <div class="user-info">
+                    <span class="user-name">Olá, Professor!</span>
+                    <img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
+                </div>
+            </header>
+
+            <section class="class-registration-section">
+                <h2>Detalhes da Aula</h2>
+                <div class="aula-details-form">
+                    <div class="form-group">
+                        <label for="turma-select">Turma:</label>
+                        <select id="turma-select" required>
+                            <option value="">Selecione a Turma</option>
+                            <option value="turma-a">Turma A</option>
+                            <option value="turma-b">Turma B</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="data-aula">Data:</label>
+                        <input type="date" id="data-aula" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="disciplina">Disciplina:</label>
+                        <input type="text" id="disciplina" placeholder="Ex: Matemática" required>
+                    </div>
+                    <button class="btn btn-secondary">Buscar Turma</button>
+                </div>
+
+                <h3 class="mt-4">Lista de Alunos</h3>
+                <table class="data-table attendance-table">
+                    <thead>
+                        <tr>
+                            <th>Nome do Aluno</th>
+                            <th>Presença</th>
+                            <th>Ausência Justificada</th>
+                            <th>Observações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ana Silva</td>
+                            <td><input type="checkbox" class="present-checkbox"></td>
+                            <td><input type="checkbox" class="justified-absence-checkbox"></td>
+                            <td><input type="text" class="observation-input" placeholder="Observações"></td>
+                        </tr>
+                        <tr>
+                            <td>Bruno Costa</td>
+                            <td><input type="checkbox" class="present-checkbox" checked></td>
+                            <td><input type="checkbox" class="justified-absence-checkbox"></td>
+                            <td><input type="text" class="observation-input" placeholder="Observações"></td>
+                        </tr>
+                        </tbody>
+                </table>
+                <button class="btn btn-primary mt-3">Salvar Frequência</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

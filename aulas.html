@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <title>Gerenciar Aulas | FluoritaTrack</title>
+    <link rel="stylesheet" href="css/aulas.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="img/logo.png" alt="Logo" class="sidebar-logo">
+                <h2>Sistema</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html" class="active"><i class="ri-layout-masonry-line"></i> Dashboard</a></li>
+                    <li><a href="dados-gerais.html"><i class="ri-graduation-cap-line"></i>Alunos</a></li>
+                    <li><a href="registro-aula.html"><i class="ri-survey-line"></i> Registrar Aula</a></li>
+                    <li><a href="aulas.html"><i class="ri-book-shelf-line"></i> Gerenciar Aulas</a></li>
+                    <li><a href="configuração.html"><i class="ri-settings-5-line"></i> Configurações</a></li>
+                    <li><a href="index.html"><i class="ri-door-open-line"></i> Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <header class="content-header">
+                <h1>Gerenciar Aulas</h1>
+                <div class="user-info">
+                    <span class="user-name">Olá, Professor!</span>
+                    <img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
+                </div>
+            </header>
+
+            <section class="session-management-section">
+                <h2>Lista de Aulas</h2>
+                <div class="actions-bar">
+                    <button class="btn btn-primary" onclick="alert('Abrindo modal de nova aula...')"><i class="icon-plus"></i> Nova Aula</button>
+                    <div class="filter-bar">
+                        <input type="text" placeholder="Pesquisar aula...">
+                        <select>
+                            <option value="">Filtrar por Turma</option>
+                            <option value="turma-a">Turma A</option>
+                            <option value="turma-b">Turma B</option>
+                        </select>
+                    </div>
+                </div>
+
+                <table class="data-table session-table">
+                    <thead>
+                        <tr>
+                            <th>Turma</th>
+                            <th>Data</th>
+                            <th>Disciplina</th>
+                            <th>Professor</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Turma A</td>
+                            <td>10/09/2024</td>
+                            <td>Matemática</td>
+                            <td>Prof. Carlos</td>
+                            <td>Concluída</td>
+                            <td>
+                                <button class="btn-icon"><i class="ri-eye-line"></i></button>
+                                <button class="btn-icon"><i class="ri-pencil-line"></i></button>
+                                <button class="btn-icon"><i class="ri-delete-bin-line"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Turma B</td>
+                            <td>09/09/2024</td>
+                            <td>Português</td>
+                            <td>Prof. Ana</td>
+                            <td>Concluída</td>
+                            <td>
+                                <button class="btn-icon"><i class="ri-eye-line"></i></button>
+                                <button class="btn-icon"><i class="ri-pencil-line"></i></button>
+                                <button class="btn-icon"><i class="ri-delete-bin-line"></i></button>
+                            </td>
+                        </tr>
+                        </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
