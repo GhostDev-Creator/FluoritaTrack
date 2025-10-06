@@ -25,6 +25,16 @@ O FluoritaTrack é uma plataforma robusta e intuitiva para o gerenciamento de fr
 
 ---
 
+## 🌐 Acesso ao Projeto Publicado
+
+O projeto está hospedado e acessível publicamente através do GitHub Pages.
+
+**Link de Acesso:**
+
+[https://ghostdev-creator.github.io/FluoritaTrack/](https://ghostdev-creator.github.io/FluoritaTrack/)
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5**: Para a estrutura e conteúdo da página.
@@ -36,3 +46,12 @@ O FluoritaTrack é uma plataforma robusta e intuitiva para o gerenciamento de fr
 ## 🔒 Licença
 
 Este projeto foi desenvolvido como parte de um trabalho de conclusão para a matéria de Projeto do curso técnico. O código-fonte é de propriedade dos alunos desenvolvedores e não pode ser copiado, distribuído ou utilizado para fins comerciais sem autorização expressa. Todos os direitos reservados.
+
+---
+
+## 👨‍💻 Autores e Contato
+
+| Nome | Função | GitHub |
+| :--- | :--- | :--- |
+| João | Desenvolvedor Front-end  | [Link do GitHub](https://github.com/GhostDev-Creator/) |
+| Laura | Desenvolvedor Front-end, Designer de UX/UI | [Link do GitHub](https://github.com/lauralopes211) |
