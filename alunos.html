@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <title>FluoritaTrack | Dados - Alunos</title>
+    <link rel="stylesheet" href="css/alunos.css">
+    <link rel="shortcut icon" href="images/empresa/logo.png" type="image/x-png">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="header-sidebar">
+            <img src="images/usuario/icone.png" alt="Foto de Perfil">
+            <h1>Alunos</h1>
+            <a href=""><i class="ri-notification-2-fill"></i></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dash.html"><i class="ri-dashboard-line"></i>Dashboard</a></li>
+                <hr>
+                <li><a href="alunos.html" class="active"><i class="ri-graduation-cap-line"></i>Alunos</a></li>
+                <li><a href="registrar-aula.html"><i class="ri-survey-line"></i>Registrar Aula</a></li>
+                <li><a href="aulas.html"><i class="ri-book-shelf-line"></i>Gerenciar Aulas</a></li>
+                <hr>
+                <li><a href="configuracoes.html"><i class="ri-settings-3-line"></i>Configuração</a></li>
+                <li><a href="index.html"><i class="ri-door-open-line"></i>Sair</a></li>
+                <li><a href="ajuda.html"><i class="ri-question-line"></i>Ajuda</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <header class="content-header">
+            <h1>Alunos</h1>
+            <div class="user-info">
+                <select id="filter-bar">
+                    <option value="todas">Filtrar por aluno</option>
+                    <option value="matriculado">Matriculado</option>
+                    <option value="transferido">Transferido</option>
+                    <option value="afastado">Afastado</option>
+                </select>
+            </div>
+        </header>
+
+        <section class="data-section">
+            <h2>Lista de Alunos</h2>
+            <div class="filter-bar">
+                <input type="text" placeholder="Pesquisar aluno...">
+                <select id="turma-filter-alunos">
+                    <option value="todas">Filtrar por Turma</option>
+                    <option value="turma-a">Turma A</option>
+                    <option value="turma-b">Turma B</option>
+                </select>
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Matrícula</th>
+                        <th>Turma</th>
+                        <th>Frequência (%)</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="alunos-table-body">
+                    <tr data-turma="turma-a">
+                        <td>João Guilherme da Silva</td>
+                        <td>2025001</td>
+                        <td>7/25</td>
+                        <td>92%</td>
+                        <td>
+                            <button class="btn-icon"><i class="ri-eye-line"></i></button>
+                            <button class="btn-icon"><i class="ri-pencil-line"></i></button>
+                            <button class="btn-icon"><i class="ri-delete-bin-line"></i></button>
+                        </td>
+                    </tr>
+                    <tr data-turma="turma-b">
+                        <td>Laura da Silva</td>
+                        <td>2025002</td>
+                        <td>11/25</td>
+                        <td>89%</td>
+                        <td>
+                            <button class="btn-icon"><i class="ri-eye-line"></i></button>
+                            <button class="btn-icon"><i class="ri-pencil-line"></i></button>
+                            <button class="btn-icon"><i class="ri-delete-bin-line"></i></button>
+                        </td>
+                    </tr>
+                    <tr data-turma="turma-b">
+                        <td>Emily Cesar</td>
+                        <td>2025003</td>
+                        <td>13/25</td>
+                        <td>87%</td>
+                        <td>
+                            <button class="btn-icon"><i class="ri-eye-line"></i></button>
+                            <button class="btn-icon"><i class="ri-pencil-line"></i></button>
+                            <button class="btn-icon"><i class="ri-delete-bin-line"></i></button>
+                        </td>
+                    </tr>
+                    <tr data-turma="turma-a">
+                        <td>Jhonathan da Silva Sila</td>
+                        <td>2025004</td>
+                        <td>20/25</td>
+                        <td>56%</td>
+                        <td>
+                            <button class="btn-icon"><i class="ri-eye-line"></i></button>
+                            <button class="btn-icon"><i class="ri-pencil-line"></i></button>
+                            <button class="btn-icon"><i class="ri-delete-bin-line"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/alunos.js"></script>
+</body>
+</html>

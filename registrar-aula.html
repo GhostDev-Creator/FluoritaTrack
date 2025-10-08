@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <title>FluoritaTrack | Chamada</title>
+    <link rel="stylesheet" href="css/registrar-aula.css">
+    <link rel="shortcut icon" href="images/empresa/logo.png" type="image/x-png">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="header-sidebar">
+            <img src="images/usuario/icone.png" alt="Foto de Perfil">
+            <h1>Registrar Aula</h1>
+            <a href=""><i class="ri-notification-2-fill"></i></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dash.html"><i class="ri-dashboard-line"></i>Dashboard</a></li>
+                <hr>
+                <li><a href="alunos.html"><i class="ri-graduation-cap-line"></i>Alunos</a></li>
+                <li><a href="registrar-aula.html" class="active"><i class="ri-survey-line"></i>Registrar Aula</a></li>
+                <li><a href="aulas.html"><i class="ri-book-shelf-line"></i>Gerenciar Aulas</a></li>
+                <hr>
+                <li><a href="configuracoes.html"><i class="ri-settings-3-line"></i>Configuração</a></li>
+                <li><a href="index.html"><i class="ri-door-open-line"></i>Sair</a></li>
+                <li><a href="ajuda.html"><i class="ri-question-line"></i>Ajuda</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+     <main class="content">
+        <header class="content-header">
+            <h1>Registrar Frequência da Aula</h1>
+        </header>
+
+        <section class="class-registration-section">
+            <h2>Detalhes da Aula</h2>
+            <div class="aula-details-form">
+                <div class="form-group">
+                    <label for="turma-filter-alunos">Turma (Filtro):</label> 
+                    <select id="turma-filter-alunos" required> 
+                        <option value="todas">Todas as Turmas</option> 
+                        <option value="turma-a">Turma A</option>
+                        <option value="turma-b">Turma B</option>
+                    </select>
+                </div>
+                <div class="date-input-wrapper">
+                    <input type="date" id="date-from" value="2025-08-20">
+                    <i class="ri-calendar-line date-icon"></i>
+                </div>
+                <div class="form-group">
+                    <label for="disciplina">Disciplina:</label>
+                    <input type="text" id="disciplina" placeholder="Ex: Matemática" required>
+                </div>
+                <button class="btn btn-secondary">Buscar Turma</button>
+            </div>
+
+            <h3 class="mt-4">Lista de Alunos</h3>
+            <table class="data-table attendance-table">
+                <thead>
+                    <tr>
+                        <th>Nome do Aluno</th>
+                        <th>Presença</th>
+                        <th>Ausência Justificada</th>
+                        <th>Observações</th>
+                    </tr>
+                </thead>
+                <tbody id="alunos-table-body"> 
+                    <tr data-turma="turma-a">
+                        <td>João Guilherme da Silva</td>
+                        <td><input type="checkbox" class="present-checkbox"></td>
+                        <td><input type="checkbox" class="justified-absence-checkbox"></td>
+                        <td><input type="text" class="observation-input" placeholder="Observações"></td>
+                    </tr>
+                    <tr data-turma="turma-b">
+                        <td>Laura Lopes</td>
+                        <td><input type="checkbox" class="present-checkbox" checked></td>
+                        <td><input type="checkbox" class="justified-absence-checkbox"></td>
+                        <td><input type="text" class="observation-input" placeholder="Observações"></td>
+                    </tr>
+                    <tr data-turma="turma-b">
+                        <td>Emily Cesar</td>
+                        <td><input type="checkbox" class="present-checkbox"></td>
+                        <td><input type="checkbox" class="justified-absence-checkbox"></td>
+                        <td><input type="text" class="observation-input" placeholder="Observações"></td>
+                    </tr>
+                    <tr data-turma="turma-a">
+                        <td>Jhonathan da Silva Sila</td>
+                        <td><input type="checkbox" class="present-checkbox" checked></td>
+                        <td><input type="checkbox" class="justified-absence-checkbox"></td>
+                        <td><input type="text" class="observation-input" placeholder="Observações"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/registrar-aula.js"></script>
+</body>
+</html>

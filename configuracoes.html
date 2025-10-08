@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <title>FluoritaTrack | Dashboard</title>
+    <link rel="stylesheet" href="css/configuracoes.css">
+    <link rel="shortcut icon" href="images/empresa/logo.png" type="image/x-png">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="header-sidebar">
+            <img src="images/usuario/icone.png" alt="Foto de Perfil">
+            <h1>Configuração</h1>
+            <a href=""><i class="ri-notification-2-fill"></i></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dash.html"><i class="ri-dashboard-line"></i>Dashboard</a></li>
+                <hr>
+                <li><a href="alunos.html"><i class="ri-graduation-cap-line"></i>Alunos</a></li>
+                <li><a href="registrar-aula.html"><i class="ri-survey-line"></i>Registrar Aula</a></li>
+                <li><a href="aulas.html"><i class="ri-book-shelf-line"></i>Gerenciar Aulas</a></li>
+                <hr>
+                <li><a href="configuracoes.html" class="active"><i class="ri-settings-3-line"></i>Configuração</a></li>
+                <li><a href="index.html"><i class="ri-door-open-line"></i>Sair</a></li>
+                <li><a href="ajuda.html"><i class="ri-question-line"></i>Ajuda</a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <main class="content">
+            <header class="content-header">
+                <h1>Configurações</h1>
+            </header>
+
+            <section class="settings-section">
+                <h2>Gerenciar Perfil</h2>
+                <form id="profileForm">
+                    <div class="form-group">
+                        <label for="profileMF">Matricula Funcional:</label>
+                        <input type="text" id="profileMF" name="profileMF">
+                    </div>
+                    <div class="form-group">
+                        <label for="profileCPF">CPF:</label>
+                        <input type="email" id="profileCPF" name="profileCPF">
+                    </div>
+                </form>
+                <div class="senha">
+                    <h2>Alterar Senha</h2>
+                    <form id="passwordForm">
+                        <div class="form-group">
+                            <label for="currentPassword">Senha Atual:</label>
+                            <div class="password-container">
+                                <input type="password" id="currentPassword" name="currentPassword" required>
+                                <i class="ri-eye-line" id="showCurrentPassword"></i>
+                                <i class="ri-eye-off-line" id="hideCurrentPassword"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">Nova Senha:</label>
+                            <div class="password-container">
+                                <input type="password" id="newPassword" name="newPassword" required>
+                                <i class="ri-eye-line" id="showNewPassword"></i>
+                                <i class="ri-eye-off-line" id="hideNewPassword"></i>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Alterar Senha</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        
+        <div id="message-box" class="message-box">
+            <p id="message-text"></p>
+            <button onclick="hideMessage()">OK</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

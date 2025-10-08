@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <title>FluoritaTrack | Dashboard</title>
+    <link rel="stylesheet" href="css/aulas.css">
+    <link rel="shortcut icon" href="images/empresa/logo.png" type="image/x-png">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="header-sidebar">
+            <img src="images/usuario/icone.png" alt="Foto de Perfil">
+            <h1>Gerenciar Aulas</h1>
+            <a href=""><i class="ri-notification-2-fill"></i></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dash.html"><i class="ri-dashboard-line"></i>Dashboard</a></li>
+                <hr>
+                <li><a href="alunos.html"><i class="ri-graduation-cap-line"></i>Alunos</a></li>
+                <li><a href="registrar-aula.html"><i class="ri-survey-line"></i>Registrar Aula</a></li>
+                <li><a href="aulas.html" class="active"><i class="ri-book-shelf-line"></i>Gerenciar Aulas</a></li>
+                <hr>
+                <li><a href="configuracoes.html"><i class="ri-settings-3-line"></i>Configuração</a></li>
+                <li><a href="index.html"><i class="ri-door-open-line"></i>Sair</a></li>
+                <li><a href="ajuda.html"><i class="ri-question-line"></i>Ajuda</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <header class="content-header">
+            <h1>Gerenciar Aulas</h1>
+        </header>
+
+        <section class="session-management-section">
+            <h2>Lista de Aulas</h2>
+            <div class="actions-bar">
+                <button class="btn btn-primary" onclick="alert('Abrindo modal de nova aula...')"><i class="icon-plus"></i>Nova Aula</button>
+                <div class="filter-bar">
+                    <input type="text" placeholder="Pesquisar aula...">
+                    <select id="turma-filter-aulas">
+                        <option value="todas">Filtrar por Turma</option>
+                        <option value="turma-a">Turma A</option>
+                        <option value="turma-b">Turma B</option>
+                    </select>
+                </div>
+            </div>
+
+            <table class="data-table session-table">
+                <thead>
+                    <tr>
+                        <th>Turma</th>
+                        <th>Data</th>
+                        <th>Disciplina</th>
+                        <th>Professor</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="aulas-table-body">
+                    <tr data-turma="turma-a">
+                        <td>Turma A</td>
+                        <td>10/09/2025</td>
+                        <td>História</td>
+                        <td>Prof. Gustavo</td>
+                        <td>Concluída</td>
+                        <td>
+                            <button class="btn-icon"><i class="ri-eye-line"></i></button>
+                            <button class="btn-icon"><i class="ri-pencil-line"></i></button>
+                            <button class="btn-icon"><i class="ri-delete-bin-line"></i></button>
+                        </td>
+                    </tr>
+                    <tr data-turma="turma-b">
+                        <td>Turma B</td>
+                        <td>09/09/2025</td>
+                        <td>Educação Física</td>
+                        <td>Prof. Vanda</td>
+                        <td>Concluída</td>
+                        <td>
+                            <button class="btn-icon"><i class="ri-eye-line"></i></button>
+                            <button class="btn-icon"><i class="ri-pencil-line"></i></button>
+                            <button class="btn-icon"><i class="ri-delete-bin-line"></i></button>
+                        </td>
+                    </tr>
+                    <tr data-turma="turma-a">
+                        <td>Turma A</td>
+                        <td>08/09/2025</td>
+                        <td>Física</td>
+                        <td>Prof. Ynaê</td>
+                        <td>Concluída</td>
+                        <td>
+                            <button class="btn-icon"><i class="ri-eye-line"></i></button>
+                            <button class="btn-icon"><i class="ri-pencil-line"></i></button>
+                            <button class="btn-icon"><i class="ri-delete-bin-line"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/alunos.js"></script>
+</body>
+</html>
